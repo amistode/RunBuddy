@@ -9,8 +9,8 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import android.util.Log;
 
 /* A service that runs in the background to get location updates and send it to the main activity */

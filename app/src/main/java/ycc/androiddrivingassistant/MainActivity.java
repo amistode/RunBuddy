@@ -17,9 +17,9 @@ import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.CountDownTimer;
 import android.speech.tts.TextToSpeech;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -354,7 +354,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         }
         else {
             Log.d(TAG, "OpenCV initialize failed");
-            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION, this, mLoaderCallback);
+            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_4_0, this, mLoaderCallback);
         }
         imgWidth = sharedPreferences.getInt("res_width", 1920);
         imgHeight = sharedPreferences.getInt("res_height", 1080);
