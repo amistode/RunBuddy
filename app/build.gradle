@@ -4,10 +4,10 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "ycc.androiddrivingassistant"
-        minSdkVersion 23
+        minSdkVersion 27
         targetSdkVersion 30
         versionCode 5
-        versionName "1.04"
+        versionName "1.05"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
